@@ -32,8 +32,10 @@ $(document).ready(function () {
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Yes, delete it!'
-        }).then(() => {
-            window.location = 'tasks/delete/' + id;
+        }).then((result) => {
+            if (result.value) {
+                window.location = 'tasks/delete/' + id;
+            }
         })
     });
 });
