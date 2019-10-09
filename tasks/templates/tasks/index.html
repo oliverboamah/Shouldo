@@ -24,10 +24,13 @@
                 <td>
                     <a href="{% url 'tasks:detail' task.id %}"><span class="badge badge-info"><i
                             class="fa fa-eye"></i> View</span></a>
-                    <a id="{{ task.id }}" class="update_task" href="javascript: void(0)" data-><span
+                    <a id="{{ task.id }}" class="update-task" href="javascript: void(0)"><span
                             class="badge badge-warning"
                             data-target="#updateTaskModal" data-toggle="modal">
                         <i class="fa fa-pencil"> Edit</i></span></a>
+                    <a id="{{ task.id }}" class="delete-task" href="javascript: void(0)"><span
+                            class="badge badge-danger"><i class="fa fa-trash"> Delete</i>
+                    </span></a>
                 </td>
             </tr>
         {% endfor %}
@@ -73,6 +76,10 @@
 {% endblock content %}
 {% block scripts %}
     {{ block.super }}
-    <script src="{% static 'tasks/task.js' %}"></script>
 
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+    <!-- My App -->
+    <script src="{% static 'tasks/task.js' %}"></script>
 {% endblock scripts %}
