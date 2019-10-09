@@ -54,7 +54,7 @@ def update_task(request, id):
 
 # retrieve all tasks
 def get_all_tasks(request):
-    tasks = Task.objects.filter(is_deleted=False)
+    tasks = Task.objects.filter(is_deleted=False).order_by('id')
     create_task_form = CreateTaskForm()
     update_task_form = UpdateTaskForm()
 
