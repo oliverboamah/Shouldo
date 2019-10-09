@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf478c74-a867-424e-9a5e-74eb59b7c27e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/templates/tasks/task-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/templates/tasks/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/templates/tasks/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/templates/tasks/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/templates/tasks/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasks/views/task_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/views/task_views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,10 +17,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tasks/templates/tasks/index.html">
+        <entry file="file://$PROJECT_DIR$/tasks/views/task_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+            <state relative-caret-position="528">
+              <caret line="59" column="15" lean-forward="true" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -58,10 +52,10 @@
         <option value="$PROJECT_DIR$/tasks/templates/tasks/base.html" />
         <option value="$PROJECT_DIR$/tasks/static/tasks/bootstrap/task.js" />
         <option value="$PROJECT_DIR$/tasks/forms/update_task_form.py" />
-        <option value="$PROJECT_DIR$/tasks/views/task_views.py" />
         <option value="$PROJECT_DIR$/tasks/static/tasks/task.js" />
         <option value="$PROJECT_DIR$/tasks/urls.py" />
         <option value="$PROJECT_DIR$/tasks/templates/tasks/index.html" />
+        <option value="$PROJECT_DIR$/tasks/views/task_views.py" />
       </list>
     </option>
   </component>
@@ -95,27 +89,7 @@
               <item name="Shouldo" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shouldo" type="462c0819:PsiDirectoryNode" />
               <item name="tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shouldo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shouldo" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shouldo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shouldo" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shouldo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shouldo" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -194,12 +168,20 @@
       <workItem from="1570470480230" duration="511000" />
       <workItem from="1570540953111" duration="7336000" />
       <workItem from="1570550231362" duration="6306000" />
-      <workItem from="1570611921628" duration="18413000" />
+      <workItem from="1570611921628" duration="19465000" />
     </task>
+    <task id="LOCAL-00001" summary="Add update task feature">
+      <created>1570637137719</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570637137719</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32566000" />
+    <option name="totallyTimeSpent" value="33618000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -228,7 +210,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32937366" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33045357" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33045357" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32937366" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -262,6 +244,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add update task feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add update task feature" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -359,17 +345,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/views/task_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/templates/tasks/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1040">
           <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="40">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/views/task_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="59" column="15" lean-forward="true" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
         </state>
       </provider>
     </entry>

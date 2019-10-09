@@ -41,10 +41,14 @@ def update_task(request, id):
 
 # retrieve all tasks
 def get_all_tasks(request):
+    tasks = Task.objects.all()
+    create_task_form = CreateTaskForm()
+    update_task_form = UpdateTaskForm()
+
     context = {
-        'tasks': Task.objects.all(),
-        'create_task_form': CreateTaskForm(),
-        'update_task_form': UpdateTaskForm()
+        'tasks': tasks,
+        'create_task_form': create_task_form,
+        'update_task_form': update_task_form
     }
     return render(request=request, template_name='tasks/index.html', context=context)
 
