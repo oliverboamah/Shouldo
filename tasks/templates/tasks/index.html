@@ -1,4 +1,5 @@
 {% extends 'tasks/base.html' %}
+{% load static %}
 {% block title %} List of Tasks {% endblock title %}
 {% block content %}
 
@@ -10,6 +11,7 @@
         <tr>
             <th>ID</th>
             <th>Title</th>
+            <th>Due Date</th>
             <th>Created at</th>
             <th>Action</th>
         </tr>
@@ -17,12 +19,20 @@
             <tr>
                 <td>{{ task.id }}</td>
                 <td>{{ task.title }}</td>
+                <td>{{ task.due_date }}</td>
                 <td>{{ task.created_at }}</td>
-                <td><a href=""><span class="badge badge-info">View</span></a></td>
+                <td>
+                    <a href="{% url 'tasks:detail' task.id %}"><span class="badge badge-info"><i
+                            class="fa fa-eye"></i> View</span></a>
+                    <a id="{{ task.id }}" class="update_task" href="javascript: void(0)" data-><span
+                            class="badge badge-warning"
+                            data-target="#updateTaskModal" data-toggle="modal">
+                        <i class="fa fa-pencil"> Edit</i></span></a>
+                </td>
             </tr>
         {% endfor %}
     </table>
-    <!-- Upload Form Modal -->
+    <!-- Add Task Form Modal -->
     <div id="exampleModal" class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -32,7 +42,7 @@
                         <h3>Add Task</h3>
                     </div>
                     <div class="modal-body">
-                        {{ store_task_form }}
+                        {{ create_task_form }}
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-success" type="submit">Add</button>
@@ -41,4 +51,28 @@
             </div>
         </div>
     </div>
+    <!-- Update Task Form Modal -->
+    <div id="updateTaskModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form id="update_task_form" action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="modal-header">
+                        <h3>Update Task</h3>
+                    </div>
+                    <div class="modal-body">
+                        {{ update_task_form }}
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" type="submit">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock content %}
+{% block scripts %}
+    {{ block.super }}
+    <script src="{% static 'tasks/task.js' %}"></script>
+
+{% endblock scripts %}
