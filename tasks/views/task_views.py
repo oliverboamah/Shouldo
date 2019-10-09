@@ -25,6 +25,19 @@ def create_task(request):
     return redirect('tasks:index')
 
 
+# delete task
+def delete_task(request, id):
+    try:
+        task = Task.objects.get(pk=id)
+        task.is_deleted = True
+        task.save()
+        messages.success(request, f"Task '{task.title}' deleted successfully!")
+    except Exception as e:
+        messages.error(request, e)
+
+    return redirect('tasks:index')
+
+
 # update task
 def update_task(request, id):
     if request.method == 'POST':
@@ -41,7 +54,7 @@ def update_task(request, id):
 
 # retrieve all tasks
 def get_all_tasks(request):
-    tasks = Task.objects.all()
+    tasks = Task.objects.filter(is_deleted=False)
     create_task_form = CreateTaskForm()
     update_task_form = UpdateTaskForm()
 
